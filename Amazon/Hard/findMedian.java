@@ -5,8 +5,8 @@ public class findMedian {
     static PriorityQueue<Integer> maxHeep = new PriorityQueue<>((a, b) -> b - a);
 
     public static void addNum(int num){
-        maxHeep.add(num);
-        minHeep.add(maxHeep.poll());
+        maxHeep.offer(num);
+        minHeep.offer(maxHeep.poll());
         if(minHeep.size() > maxHeep.size()){
             maxHeep.offer(minHeep.poll());
         }
