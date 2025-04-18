@@ -11,6 +11,7 @@ public class findMedian {
             maxHeep.offer(minHeep.poll());
         }
     }
+    
     public static double findMedians(){
         if(maxHeep.size() > minHeep.size()){
             return maxHeep.peek();
