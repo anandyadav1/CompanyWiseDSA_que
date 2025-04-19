@@ -17,8 +17,7 @@ public class validateStackSequences {
             st.pop();
             j++;
         }
-
-        return st.empty();
+        return (st.empty()) ? true : false;
     }
 
     public static void main(String[] args) {
