@@ -19,5 +19,6 @@ public class ipAddress {
         //output -> 1[.]1[.]1[.]1
 
         System.out.println(convert(address));
+        
     }
 }
